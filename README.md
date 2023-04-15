@@ -12,8 +12,7 @@ Directory Structure
 -------------------
 
 The directory structure in this repository may vary depending on the projects I'm working on, but it generally follows a similar organization. Here's an overview of the directory structure:
-
-/
+```
 |-- project1/
 |   |-- src/
 |   |-- README.md
@@ -28,7 +27,7 @@ The directory structure in this repository may vary depending on the projects I'
 |   |-- ...
 |-- ...
 |-- README.md
-
+```
 
 Each project is organized in its own subdirectory, typically with a `src` directory that contains the source code, and a `README.md` file that provides documentation and instructions on how to run the project.
 
