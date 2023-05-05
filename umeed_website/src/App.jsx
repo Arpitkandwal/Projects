@@ -1,20 +1,25 @@
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './pages/home/Home'
 import Gallery from './pages/gallery/Gallery'
 import Contact from './pages/contact/Contact'
-import Map from './pages/map/Map'
+import Branches from './pages/branches/Branches'
 import NotFound from './pages/notFound/NotFound'
 import Timeline from './pages/timeline/Timeline'
+import Donate from './pages/donate/Donate'
+import Navbar from './components/Navbar'
 const App = () => {
     return (
-        <div>
-            App
+        <BrowserRouter>
+            <Navbar/>
             <Home />
             <Gallery />
             <Contact />
-            <Map />
+            <Branches/>
             <Timeline />
+            <Donate/>
+            
             <NotFound />
-        </div>
+        </BrowserRouter>
     )
 }
 
