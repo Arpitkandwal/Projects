@@ -11,6 +11,7 @@
     --umeed-green : hsl(132, 97%, 23%);
     --umeed-yellow :hsl(40, 100%, 76%);
     --umeed-blue: hsl(192, 100%, 95%);
+    --umeed-dark-blue : hsl(198.29deg 77.78% 73.53%);;
     --container-width-lg: 80%;
     --container-width-md: 90%;
     --transition: all 500ms ease-in-out;
@@ -19,7 +20,7 @@
     --font-color-lightest: #3C4748;
 }
 body{
-    background-color: var(--umeed-blue);
+    background-color: var(--umeed-dark-blue);
     /* background-color: red; */
 }
 
@@ -53,3 +54,29 @@ img{
     object-fit: cover;
     width: 100%;
 }
+/* for animation */
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--umeed-green);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+

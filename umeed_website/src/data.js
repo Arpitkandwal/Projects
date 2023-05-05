@@ -1,9 +1,5 @@
 export const links = [
     {
-        name: "Home",
-        path: "/"
-    },
-    {
         name: "Gallery",
         path: "/gallery"
     },
@@ -16,7 +12,7 @@ export const links = [
         path: "/branches"
     },
     {
-        name: "Contact",
+        name: "Contact Us",
         path: "/contact"
     },
 ];

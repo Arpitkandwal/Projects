@@ -1,0 +1,63 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    /* place-items: center; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: var(--umeed-blue);
+}
+/* only shows in medium and small screens */
+/* TODO manage the hamburger button */
+.nav__toggle-hamburger{
+    display: none;
+}
+.nav__container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nav__logo {
+    display: block;
+    width: 7.5rem;
+    margin-left:-5% ;
+}
+.nav__logo > div{
+    display: flex;
+    align-items: center;
+    width: inherit;
+}
+
+#logo_bulb{
+    width: 65%;
+}
+/* TODO remove name for mobile screens */
+#logo_name{
+    width: 120%;
+    object-fit: contain;
+    margin-left: -6%; /* Add some margin between the two images */
+}
+.nav__links {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+.nav__links a:hover{
+    color : var(--umeed-green);
+} 
+.nav__donate {
+    display: block;
+    background-color: var(--umeed-green);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
