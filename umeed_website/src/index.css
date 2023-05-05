@@ -1,0 +1,55 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+    --umeed-green : hsl(132, 97%, 23%);
+    --umeed-yellow :hsl(40, 100%, 76%);
+    --umeed-blue: hsl(192, 100%, 95%);
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --transition: all 500ms ease-in-out;
+    --font-color-dark: #100C08;
+    --font-color-light: #242124;
+    --font-color-lightest: #3C4748;
+}
+body{
+    background-color: var(--umeed-blue);
+    /* background-color: red; */
+}
+
+/* General Styles */
+body{
+    font-family: 'montserrat', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+    color: var(--font-color-dark);
+}
+.container {
+    width: var(--container-width-lg);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5 {
+    line-height: 1.2;
+    color: var(--font-color-light);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+a{
+    color: var(--font-color-lightest)
+}
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
