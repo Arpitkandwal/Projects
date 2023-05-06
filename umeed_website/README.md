@@ -4,9 +4,8 @@ NGO Website
 This repository contains the code for Umeed's website. The website includes the following features:
 
 -   [x] Setup React app
--   [ ]  Navbar: Create a navbar at the top of the page that will always be visible and stick to the top using CSS.
-    -   [ ]  Add your NGO logo and a donation button to the navbar.
-    -   [ ]  Link the donation button to a donation page where people can donate to your NGO.
+-   [x]  Navbar: Create a navbar at the top of the page that will always be visible and stick to the top using CSS.
+    -   [x]  Add your NGO logo and a donation button to the navbar]  Link the donation button to a donation page where people can donate to your NGO.
 -   [ ]  Carousel: Create a carousel at the top of the page with a faded background image.
     -   [ ]  Add a headline and subtext to the carousel that describes your NGO and its mission.
     -   [ ]  Include a link to the full story or more information about your NGO.
