@@ -2,15 +2,12 @@ nav{
     height: 5rem;
     width: 100vw;
     display: flex;
-    /* place-items: center; */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
     background-color: var(--umeed-blue);
 }
-/* only shows in medium and small screens */
-/* TODO manage the hamburger button */
 .nav__toggle-hamburger{
     display: none;
 }
@@ -28,6 +25,7 @@ nav{
     margin-left:-5% ;
 }
 .nav__logo > div{
+    margin-left: -40%;
     display: flex;
     align-items: center;
     width: inherit;
@@ -36,7 +34,6 @@ nav{
 #logo_bulb{
     width: 65%;
 }
-/* TODO remove name for mobile screens */
 #logo_name{
     width: 120%;
     object-fit: contain;
@@ -52,6 +49,7 @@ nav{
     border: none;
     border-radius: 1.5rem;
     cursor: pointer;
+    margin-left: 80%;
 }
 .nav__links {
     display: flex;
@@ -78,3 +76,85 @@ nav{
 }
 
 /* MEDIA Queries (medium and small screens) */
+
+@media screen and (max-width : 1024px){
+    /* .nav__logo > div{
+        margin-left: none;
+    } */
+    #logo_bulb{
+        display: none;
+    }
+    #logo_name{
+        margin-left: 30%;
+    }
+    .nav__toggle-hamburger{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .nav__toggle-hamburger svg{
+        color: var(--font-color-light);
+    }
+    .nav__links{
+        position: absolute;
+        top: 100%;
+        right:0;
+        flex-direction: column;
+        gap: 0;
+        perspective: 400px;
+    }
+    .active , .active-nav::after{
+        display: none;
+    }
+    .nav__links li {
+        height: 4rem;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        animation: navAnimation 600ms ease forwards;
+        transform: rotateX(90deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+    .nav__links li:nth-child(2){
+        animation-delay: 100ms;
+    }
+    .nav__links li:nth-child(3){
+        animation-delay: 250ms;
+    }
+    .nav__links li:nth-child(4){
+        animation-delay: 400ms;
+    }
+    .nav__links li:nth-child(5){
+        animation-delay: 550ms;
+    }
+    .nav__links li:nth-child(6){
+        animation-delay: 700ms;
+    }
+    @keyframes navAnimation{
+        to {
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
+    .nav__links li :hover{
+        border: 2px dashed var(--umeed-green) ;
+    }
+    .nav__links li a {
+        background-color: var(--umeed-blue);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 3rem 1rem 3rem;
+    }
+    .nav__donate{
+        margin-left: 10%;
+    }
+    .show__nav{
+        display: flex;
+    }
+    .hide__nav{
+        display: none;
+    }
+}

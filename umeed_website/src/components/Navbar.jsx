@@ -1,10 +1,13 @@
+import {useState} from 'react'
 import {Link,NavLink} from 'react-router-dom'
 import './navbar.css'
 import {links } from '../data'
 import LogoBulb from '../images/logo_bulb.png'
 import LogoText from '../images/logo_text.png'
 import {GoThreeBars} from 'react-icons/go'
+import {GrClose} from 'react-icons/gr'
 const Navbar = () => {
+    const [isNavShowing, setIsNavShowing] = useState(false)
     return (
         <nav>
             <div className="container nav__container">
@@ -16,12 +19,12 @@ const Navbar = () => {
                         </div>
                 </Link>
                 {/* links  */}
-                <ul className='nav__links'>
+                <ul className={`nav__links ${isNavShowing? 'show__nav' : 'hide__nav'}`}>
                     {
                         links.map(({name,path},index)=>{
                             return (
-                                <li>
-                                    <NavLink className={({isActive})=> isActive? 'active-nav ' : ''} to={path}>
+                                <li key={index}>
+                                    <NavLink className={({isActive})=> isActive? 'active-nav' : ''} to={path}>
                                         {name}
                                     </NavLink>
                                 </li>
@@ -34,8 +37,10 @@ const Navbar = () => {
                         <button className='nav__donate'>Donate</button>
                 </Link>       
                 {/* hamburger */}
-                <button className="nav__toggle-hamburger">
-                    <GoThreeBars/>
+                <button className="nav__toggle-hamburger" onClick={()=> setIsNavShowing(!isNavShowing)}>
+                    {
+                        isNavShowing? <GrClose/> : <GoThreeBars/>
+                    }
                 </button>
             </div>
             
