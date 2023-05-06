@@ -21,7 +21,9 @@ const Navbar = () => {
                         links.map(({name,path},index)=>{
                             return (
                                 <li>
-                                    <NavLink className="hover-underline-animation" to={path}>{name}</NavLink>
+                                    <NavLink className={({isActive})=> isActive? 'active-nav ' : ''} to={path}>
+                                        {name}
+                                    </NavLink>
                                 </li>
                             )
                         })

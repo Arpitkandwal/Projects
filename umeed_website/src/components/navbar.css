@@ -42,14 +42,6 @@ nav{
     object-fit: contain;
     margin-left: -6%; /* Add some margin between the two images */
 }
-.nav__links {
-    display: flex;
-    gap: 3.5rem;
-    align-items: center;
-}
-.nav__links a:hover{
-    color : var(--umeed-green);
-} 
 .nav__donate {
     display: block;
     background-color: var(--umeed-green);
@@ -61,3 +53,28 @@ nav{
     border-radius: 1.5rem;
     cursor: pointer;
 }
+.nav__links {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+.nav__links a:hover{
+    color : var(--umeed-green);
+} 
+.active-nav{
+    position: relative;
+    color: var(--umeed-green);
+}
+.active-nav::after{
+    content: '';
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--umeed-blue);
+    position: absolute;
+    left: calc(35%);
+    transform: rotate(45deg);
+    margin-top: 0.8rem;
+}
+
+/* MEDIA Queries (medium and small screens) */
