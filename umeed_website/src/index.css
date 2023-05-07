@@ -10,8 +10,9 @@
 :root {
     --umeed-green : hsl(132, 97%, 23%);
     --umeed-yellow :hsl(40, 100%, 76%);
-    --umeed-dark-blue: hsl(192, 100%, 95%);
+    --umeed-light-blue: hsl(192, 100%, 95%);
     --umeed-blue : hsl(192, 100%, 85%);
+    --umeed-light-teal: hsl(180, 50%, 40%);
     --container-width-lg: 80%;
     --container-width-md: 90%;
     --transition: all 500ms ease-in-out;
@@ -20,7 +21,7 @@
     --font-color-lightest: #3C4748;
 }
 body{
-    background-color: var(--umeed-dark-blue);
+    background-color: var(--umeed-light-blue);
     /* background-color: red; */
 }
 
@@ -56,3 +57,25 @@ img{
 }
 
 
+/* general classes */
+.btn {
+    color: var(--umeed-light-blue);
+    width: fit-content;
+    margin: 0 auto;
+    padding : 0.9rem 2rem;
+    background-color: var(--umeed-green);
+    border-radius: 1.5rem;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color: var(--umeed-light-teal);
+}
+.btn.lg {
+    padding: 1.2rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+.btn.sm{
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+}

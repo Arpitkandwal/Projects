@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './mainHeader.css'
 import { Link } from 'react-router-dom';
 import { mainHeaderCarouseldata } from '../data';
 

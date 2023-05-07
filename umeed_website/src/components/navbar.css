@@ -2,7 +2,7 @@ nav{
     height: 5rem;
     width: 100vw;
     display: flex;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
