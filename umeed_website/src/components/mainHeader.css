@@ -1,9 +1,10 @@
 .main__header{
+    background-color: var(--umeed-yellow);
     width: 100vw;
-    height: 100vh;
+    height: calc(50vh - 3rem);
     display: grid;
     place-items: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 .main__header-container{
     height: 100%;
@@ -25,3 +26,25 @@
     margin: 1rem 0 3.5rem ;
     font-size: 1.1rem;
 }
+
+.main__header-right{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.main__header-image{
+    object-fit:fill;
+    position: relative;
+    
+}
+.main__header-image img {
+    max-height: 40vh;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+.main__header-image img:hover{
+    border-radius: 40px;
+}
+

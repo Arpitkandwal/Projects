@@ -29,7 +29,6 @@ const MainHeader = () => {
                     </Link>
                 </div>
                 <div className="main__header-right">
-                    <div className="main__header-circle"></div>
                     <div className="main__header-image">
                         <img src={currentItem.image} alt={currentItem.title} />
                     </div>

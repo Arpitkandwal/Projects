@@ -19,6 +19,7 @@
     --font-color-dark: #100C08;
     --font-color-light: #242124;
     --font-color-lightest: #3C4748;
+    --font-color-white: #fffbfb;
 }
 body{
     background-color: var(--umeed-light-blue);
@@ -59,7 +60,7 @@ img{
 
 /* general classes */
 .btn {
-    color: var(--umeed-light-blue);
+    color: var(--font-color-white);
     width: fit-content;
     margin: 0 auto;
     padding : 0.9rem 2rem;
